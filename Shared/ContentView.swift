@@ -9,8 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HomeView()
+            .frame(minWidth: 300, minHeight: 300)
+            .navigationTitle("Auto Clicker")
+            .toolbar(content: {
+                ToolbarItemGroup(placement: .automatic) {
+                    Spacer()
+                    Menu {
+                        Button(action: {
+                            NSApp.sendAction(Selector(("showPreferencesWindow:")), to: nil, from: nil)
+                        }) {
+                            Label("Preferences", systemImage: "gear")
+                        }
+                    } label: {
+                        Label("Options", systemImage: "ellipsis.circle.fill")
+                    }
+                }
+            })
+        
     }
 }
 

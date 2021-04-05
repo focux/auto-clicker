@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10801EC26180977003E098E /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10801EB26180977003E098E /* VisualEffectBlur.swift */; };
+		B1080200261A33ED003E098E /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = B10801FF261A33ED003E098E /* KeyboardShortcuts */; };
+		B1080206261A3521003E098E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1080205261A3521003E098E /* Constants.swift */; };
+		B108020C261A38B8003E098E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108020B261A38B8003E098E /* SettingsView.swift */; };
+		B1080212261A3957003E098E /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1080211261A3957003E098E /* GeneralSettingsView.swift */; };
 		B173F36F260CAEE100717643 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173F36E260CAEE100717643 /* Tests_iOS.swift */; };
 		B173F37A260CAEE100717643 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173F379260CAEE100717643 /* Tests_macOS.swift */; };
 		B173F37C260CAEE100717643 /* AutoClickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173F353260CAEDE00717643 /* AutoClickerApp.swift */; };
@@ -15,6 +20,9 @@
 		B173F37F260CAEE100717643 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173F354260CAEDE00717643 /* ContentView.swift */; };
 		B173F380260CAEE100717643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B173F355260CAEE100717643 /* Assets.xcassets */; };
 		B173F381260CAEE100717643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B173F355260CAEE100717643 /* Assets.xcassets */; };
+		B173F39C260D5C6800717643 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173F39B260D5C6800717643 /* HomeView.swift */; };
+		B173F39D260D5C6800717643 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173F39B260D5C6800717643 /* HomeView.swift */; };
+		B1FD016B261A54C000690375 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD016A261A54C000690375 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B10801EB26180977003E098E /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		B1080205261A3521003E098E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B108020B261A38B8003E098E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B1080211261A3957003E098E /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
 		B173F353260CAEDE00717643 /* AutoClickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoClickerApp.swift; sourceTree = "<group>"; };
 		B173F354260CAEDE00717643 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B173F355260CAEE100717643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +61,8 @@
 		B173F375260CAEE100717643 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B173F379260CAEE100717643 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B173F37B260CAEE100717643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B173F39B260D5C6800717643 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B1FD016A261A54C000690375 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1080200261A33ED003E098E /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +116,11 @@
 				B173F353260CAEDE00717643 /* AutoClickerApp.swift */,
 				B173F354260CAEDE00717643 /* ContentView.swift */,
 				B173F355260CAEE100717643 /* Assets.xcassets */,
+				B108020B261A38B8003E098E /* SettingsView.swift */,
+				B1080211261A3957003E098E /* GeneralSettingsView.swift */,
+				B1FD016A261A54C000690375 /* AppState.swift */,
+				B173F39B260D5C6800717643 /* HomeView.swift */,
+				B1080205261A3521003E098E /* Constants.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -128,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				B173F364260CAEE100717643 /* Info.plist */,
+				B10801EB26180977003E098E /* VisualEffectBlur.swift */,
 				B173F365260CAEE100717643 /* macOS.entitlements */,
 			);
 			path = macOS;
@@ -184,6 +205,9 @@
 			dependencies = (
 			);
 			name = "AutoClicker (macOS)";
+			packageProductDependencies = (
+				B10801FF261A33ED003E098E /* KeyboardShortcuts */,
+			);
 			productName = "AutoClicker (macOS)";
 			productReference = B173F362260CAEE100717643 /* AutoClicker.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +282,9 @@
 				Base,
 			);
 			mainGroup = B173F34D260CAEDE00717643;
+			packageReferences = (
+				B10801FE261A33ED003E098E /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
 			productRefGroup = B173F35B260CAEE100717643 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -308,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B173F39C260D5C6800717643 /* HomeView.swift in Sources */,
 				B173F37E260CAEE100717643 /* ContentView.swift in Sources */,
 				B173F37C260CAEE100717643 /* AutoClickerApp.swift in Sources */,
 			);
@@ -317,8 +345,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B108020C261A38B8003E098E /* SettingsView.swift in Sources */,
+				B10801EC26180977003E098E /* VisualEffectBlur.swift in Sources */,
+				B173F39D260D5C6800717643 /* HomeView.swift in Sources */,
+				B1FD016B261A54C000690375 /* AppState.swift in Sources */,
 				B173F37F260CAEE100717643 /* ContentView.swift in Sources */,
 				B173F37D260CAEE100717643 /* AutoClickerApp.swift in Sources */,
+				B1080212261A3957003E098E /* GeneralSettingsView.swift in Sources */,
+				B1080206261A3521003E098E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +730,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B10801FE261A33ED003E098E /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B10801FF261A33ED003E098E /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B10801FE261A33ED003E098E /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B173F34E260CAEDE00717643 /* Project object */;
 }

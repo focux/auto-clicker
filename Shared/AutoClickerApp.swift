@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import KeyboardShortcuts
 
 @main
 struct AutoClickerApp: App {
+    @StateObject var appState: AppState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(appState)
+        }
+        .windowToolbarStyle(UnifiedCompactWindowToolbarStyle())
+        .windowStyle(HiddenTitleBarWindowStyle())
+        Settings {
+            SettingsView().environmentObject(appState)
+            
         }
     }
 }
