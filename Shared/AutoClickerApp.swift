@@ -15,6 +15,9 @@ struct AutoClickerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView().environmentObject(appState)
+                .onReceive(NotificationCenter.default.publisher(for: NSApplication.willUpdateNotification), perform: { _ in
+                    hideZoomButton()
+                })
         }
         .windowToolbarStyle(UnifiedCompactWindowToolbarStyle())
         .windowStyle(HiddenTitleBarWindowStyle())
