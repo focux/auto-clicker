@@ -10,8 +10,6 @@ import Combine
 import KeyboardShortcuts
 import AVFoundation
 
-let systemSoundID: SystemSoundID = 1016
-
 struct BlueButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
@@ -83,15 +81,11 @@ struct HomeView: View {
                     if !self.enabled {
                         self.timer!.upstream.connect().cancel()
                     } else {
-                        for i in 1...Int(self.clicksPerSecond) {
-                            print("clickkk #\(i) \(self.clicksPerSecond)")
-                            if self.playSound {
-                                simulateClickWithBeep()
-                            } else {
-                                simulateClick()
-                            }
+                        if self.playSound {
+                            simulateClickWithBeep()
+                        } else {
+                            simulateClick()
                         }
-                        
                     }
                 }
         } else {
