@@ -33,4 +33,4 @@ Requires macOS 10.15 or later.
 
 Support the development of this app to buy an Apple Developer Subscription so we can publish this app in the App Store and Apple can also notarize our DMG so you don't get the sketchy alert about the app being unsecured.
 
-<a href="https://www.buymeacoffee.com/focux" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Pizza" style="height: 60px !important;width: 217px !important; margin-top: 18px" ></a>
+<a href="https://www.buymeacoffee.com/focux" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Pizza" width="217" height="60" style="height: 60px !important;width: 217px !important; margin-top: 18px"></a>
