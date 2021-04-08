@@ -1,6 +1,6 @@
 <div align="center">
 	<a href="https://autoclicker.focux.dev">
-		<img src="Shared/Assets.xcassets/AppIcon.appiconset/Icon-128%20(1).png" width="200" height="200">
+		<img src="Shared/Assets.xcassets/AppIcon.appiconset/Icon-256%20(1).png" width="200" height="200">
 	</a>
 	<h1>AutoClicker</h1>
 	<p>
