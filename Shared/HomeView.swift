@@ -26,7 +26,6 @@ struct BlueButtonStyle: ButtonStyle {
 
 struct HomeView: View {
     @State private var enabled = false
-    @AppStorage("secondsInterval") private var secondsInterval = 1.0
     @AppStorage("playSound") private var playSound = true
     @AppStorage("clicksPerSecond") private var clicksPerSecond = 1.0
     @State private var timer: Publishers.Autoconnect<Timer.TimerPublisher>? = nil
@@ -34,26 +33,18 @@ struct HomeView: View {
     
     private var shortcut = KeyboardShortcuts.getShortcut(for: .toggleAutoClick)?.description
     
+    var secondsBetweenClicks: Double { 1/clicksPerSecond }
+    
     func handleClick() {
         enabled.toggle()
         
         if enabled {
-            timer = Timer.publish(every: secondsInterval, on: .main, in: .common).autoconnect()
+            timer = Timer.publish(every: secondsBetweenClicks, on: .main, in: .common).autoconnect()
             
             timer = timer!.upstream.autoconnect()
         } else {
             timer!.upstream.connect().cancel()
         }
-    }
-    
-    func click() {
-        let dummy = CGEvent.init(source: nil)
-        let loc = dummy!.location
-        
-        let mouseDown = CGEvent(mouseEventSource: nil, mouseType: CGEventType.leftMouseDown, mouseCursorPosition: loc, mouseButton: CGMouseButton.left)
-        let mouseUp = CGEvent(mouseEventSource: nil, mouseType: CGEventType.leftMouseUp, mouseCursorPosition: loc, mouseButton: CGMouseButton.left)
-        mouseDown?.post(tap: CGEventTapLocation.cghidEventTap)
-        mouseUp?.post(tap: CGEventTapLocation.cghidEventTap)
     }
     
     var content: some View {
@@ -95,9 +86,10 @@ struct HomeView: View {
                         for i in 1...Int(self.clicksPerSecond) {
                             print("clickkk #\(i) \(self.clicksPerSecond)")
                             if self.playSound {
-                                NSSound.beep()
+                                simulateClickWithBeep()
+                            } else {
+                                simulateClick()
                             }
-                            click()
                         }
                         
                     }
@@ -117,6 +109,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView().environmentObject(AppState())
     }
 }

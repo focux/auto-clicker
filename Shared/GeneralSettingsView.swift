@@ -10,7 +10,6 @@ import KeyboardShortcuts
 
 struct GeneralSettingsView: View {
     @AppStorage("showPreview") private var showPreview = true
-    @AppStorage("secondsInterval") private var secondsInterval = 1.0
     @AppStorage("playSound") private var playSound = true
     @AppStorage("clicksPerSecond") private var clicksPerSecond = 1.0
     @EnvironmentObject var appState: AppState
@@ -25,10 +24,6 @@ struct GeneralSettingsView: View {
                     })
                 }
                 Toggle("Play sound when clicking", isOn: $playSound)
-                Slider(value: $secondsInterval, in: 1...30, step: 1) {
-                    Text("Seconds Interval (\(secondsInterval, specifier: "%.0f")s)")
-                        .frame(width: 145, alignment: .leading)
-                }
                 Slider(value: $clicksPerSecond, in: 1...20, step: 1) {
                     Text("Clicks per second (\(clicksPerSecond, specifier: "%.0f"))")
                         .frame(width: 145, alignment: .leading)

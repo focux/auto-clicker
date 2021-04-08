@@ -23,6 +23,7 @@
 		B173F39C260D5C6800717643 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173F39B260D5C6800717643 /* HomeView.swift */; };
 		B173F39D260D5C6800717643 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173F39B260D5C6800717643 /* HomeView.swift */; };
 		B1FD016B261A54C000690375 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD016A261A54C000690375 /* AppState.swift */; };
+		B1FD0184261DDB7A00690375 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD0183261DDB7900690375 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		B173F37B260CAEE100717643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B173F39B260D5C6800717643 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B1FD016A261A54C000690375 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B1FD0183261DDB7900690375 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				B1FD016A261A54C000690375 /* AppState.swift */,
 				B173F39B260D5C6800717643 /* HomeView.swift */,
 				B1080205261A3521003E098E /* Constants.swift */,
+				B1FD0183261DDB7900690375 /* Utilities.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				B1FD016B261A54C000690375 /* AppState.swift in Sources */,
 				B173F37F260CAEE100717643 /* ContentView.swift in Sources */,
 				B173F37D260CAEE100717643 /* AutoClickerApp.swift in Sources */,
+				B1FD0184261DDB7A00690375 /* Utilities.swift in Sources */,
 				B1080212261A3957003E098E /* GeneralSettingsView.swift in Sources */,
 				B1080206261A3521003E098E /* Constants.swift in Sources */,
 			);
@@ -561,6 +565,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = focux.AutoClicker;
 				PRODUCT_NAME = AutoClicker;
 				SDKROOT = macosx;
@@ -585,6 +590,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = focux.AutoClicker;
 				PRODUCT_NAME = AutoClicker;
 				SDKROOT = macosx;
