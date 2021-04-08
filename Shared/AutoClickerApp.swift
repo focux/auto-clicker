@@ -14,7 +14,8 @@ struct AutoClickerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(appState)
+            ContentView()
+                .environmentObject(appState)
                 .onReceive(NotificationCenter.default.publisher(for: NSApplication.willUpdateNotification), perform: { _ in
                     hideZoomButton()
                 })
@@ -23,7 +24,6 @@ struct AutoClickerApp: App {
         .windowStyle(HiddenTitleBarWindowStyle())
         Settings {
             SettingsView().environmentObject(appState)
-            
         }
     }
 }
