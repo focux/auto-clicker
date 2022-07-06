@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A788E195279AD75B00CBBC66 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = A788E194279AD75B00CBBC66 /* KeyboardShortcuts */; };
+		A788E197279AD7AF00CBBC66 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = A788E196279AD7AF00CBBC66 /* KeyboardShortcuts */; };
 		B10801EC26180977003E098E /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10801EB26180977003E098E /* VisualEffectBlur.swift */; };
-		B1080200261A33ED003E098E /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = B10801FF261A33ED003E098E /* KeyboardShortcuts */; };
 		B1080206261A3521003E098E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1080205261A3521003E098E /* Constants.swift */; };
 		B108020C261A38B8003E098E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108020B261A38B8003E098E /* SettingsView.swift */; };
 		B1080212261A3957003E098E /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1080211261A3957003E098E /* GeneralSettingsView.swift */; };
@@ -72,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A788E195279AD75B00CBBC66 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1080200261A33ED003E098E /* KeyboardShortcuts in Frameworks */,
+				A788E197279AD7AF00CBBC66 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +102,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A788E193279AD75B00CBBC66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B173F34D260CAEDE00717643 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +118,7 @@
 				B173F36D260CAEE100717643 /* Tests iOS */,
 				B173F378260CAEE100717643 /* Tests macOS */,
 				B173F35B260CAEE100717643 /* Products */,
+				A788E193279AD75B00CBBC66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +201,9 @@
 			dependencies = (
 			);
 			name = "AutoClicker (iOS)";
+			packageProductDependencies = (
+				A788E194279AD75B00CBBC66 /* KeyboardShortcuts */,
+			);
 			productName = "AutoClicker (iOS)";
 			productReference = B173F35A260CAEE100717643 /* AutoClicker.app */;
 			productType = "com.apple.product-type.application";
@@ -209,7 +222,7 @@
 			);
 			name = "AutoClicker (macOS)";
 			packageProductDependencies = (
-				B10801FF261A33ED003E098E /* KeyboardShortcuts */,
+				A788E196279AD7AF00CBBC66 /* KeyboardShortcuts */,
 			);
 			productName = "AutoClicker (macOS)";
 			productReference = B173F362260CAEE100717643 /* AutoClicker.app */;
@@ -566,7 +579,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = focux.AutoClicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoclicker;
 				PRODUCT_NAME = AutoClicker;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -591,7 +604,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = focux.AutoClicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoclicker;
 				PRODUCT_NAME = AutoClicker;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -749,7 +762,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B10801FF261A33ED003E098E /* KeyboardShortcuts */ = {
+		A788E194279AD75B00CBBC66 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B10801FE261A33ED003E098E /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		A788E196279AD7AF00CBBC66 /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B10801FE261A33ED003E098E /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
 			productName = KeyboardShortcuts;
