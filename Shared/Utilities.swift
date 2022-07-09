@@ -24,6 +24,6 @@ func simulateClickWithBeep() {
 
 func hideZoomButton() {
     for window in NSApplication.shared.windows {
-        window.standardWindowButton(NSWindow.ButtonType.zoomButton)!.isHidden = true
+        window.standardWindowButton(NSWindow.ButtonType.zoomButton)?.isHidden = true
     }
 }
